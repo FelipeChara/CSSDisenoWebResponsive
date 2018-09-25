@@ -41,6 +41,31 @@ figure{
   margin: 0 auto;
 }
 
+/*Secciones*/
+
+.imgColumnas{
+  background: #d5c75f;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imgColumnas img{
+  width: 95%;
+  margin: 2.5%;
+}
+
+.imgColumnas figcaption{
+  margin-bottom: 3%;
+}
+
+.imgColumnas a:link, .imgColumnas a:visited{
+  text-decoration: none;
+  color: black;
+}
+
 /*Secciones Index*/
 
 #imagenCentral{
@@ -53,27 +78,21 @@ figure{
   margin: 2.5% 5%;
 }
 
-#imgInferiores{
-  background: #d5c75f;
-  width: 100%;
-  font-size: 1.2em;
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
+/*Secciones Paisajes y Retratos*/
+
+.blur img{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
 
-#imgInferiores img{
-  width: 95%;
-  margin: 2.5%;
+.grises img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-#imgInferiores figcaption{
-  margin-bottom: 3%;
-}
-
-#imgInferiores a:link, #imgInferiores a:visited{
-  text-decoration: none;
-  color: black;
+.sepia img{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
 }
 
 /* Pie Pagina*/
@@ -121,6 +140,34 @@ footer > div{
     order: 2;
     width: 100%;
   }
+
+  /*Paisajes y Retratos*/
+
+  #imagen1{
+    order: 1;
+    width: 100%;
+  }
+  #imagen2{
+    order: 2;
+    width: 100%;
+  }
+  #imagen3{
+    order: 3;
+    width: 100%;
+  }
+  #imagen4{
+    order: 4;
+    width: 100%;
+  }
+  #imagen5{
+    order: 5;
+    width: 100%;
+  }
+  #imagen6{
+    order: 6;
+    width: 100%;
+  }
+
 
   /*Pie Pagina*/
   #contacto{
@@ -172,6 +219,34 @@ footer > div{
     width: 50%;
   }
 
+  /*Paisajes y Retratos*/
+
+  #imagen1{
+    order: 1;
+    width: 33%;
+  }
+  #imagen2{
+    order: 2;
+    width: 33%;
+  }
+  #imagen3{
+    order: 3;
+    width: 33%;
+  }
+  #imagen4{
+    order: 4;
+    width: 33%;
+  }
+  #imagen5{
+    order: 5;
+    width: 33%;
+  }
+  #imagen6{
+    order: 6;
+    width: 33%;
+  }
+
+
   /*Pie Pagina*/
   #contacto{
     order: 1;
@@ -189,4 +264,7 @@ footer > div{
     order: 4;
     width: 20%;
   }
+
+
+
 }
