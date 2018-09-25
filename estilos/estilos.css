@@ -3,6 +3,8 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 
+/* Cabecera*/
+
 header{
   background: #5b7989;
   border-radius: 10px 10px 0px 0px;
@@ -23,20 +25,23 @@ header{
   padding: 1em;
 }
 
+#menu a:link, #menu a:visited{
+  color: white;
+  padding: 0.5em;
+}
+
+/*Imagenes*/
+
 img{
   -webkit-filter: drop-shadow(2px 2px #02010a);
   filter: drop-shadow(2px 2px #02010a);
-
 }
 
 figure{
   margin: 0 auto;
 }
 
-a:link, a:visited{
-  color: white;
-  padding: 0.5em;
-}
+/*Secciones Index*/
 
 #imagenCentral{
   background: #82c3a6;
@@ -51,6 +56,8 @@ a:link, a:visited{
 #imgInferiores{
   background: #d5c75f;
   width: 100%;
+  font-size: 1.2em;
+  text-align: center;
   display: flex;
   flex-flow: row wrap;
 }
@@ -60,11 +67,40 @@ a:link, a:visited{
   margin: 2.5%;
 }
 
+#imgInferiores figcaption{
+  margin-bottom: 3%;
+}
+
+#imgInferiores a:link, #imgInferiores a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+/* Pie Pagina*/
+
+footer{
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer > div{
+  margin: 2.5%;
+}
+
+
+/*Mobile*/
 
 @media (max-width:900px) {
   #contenido{
     width: 100%;
   }
+
+  /*Cabecera*/
   #titulo{
     width: 100%;
     order: 1;
@@ -75,6 +111,8 @@ a:link, a:visited{
     order: 2;
     text-align: center;
   }
+
+  /*Index*/
   #paisajes{
     order: 1;
     width: 100%;
@@ -84,14 +122,36 @@ a:link, a:visited{
     width: 100%;
   }
 
+  /*Pie Pagina*/
+  #contacto{
+    order: 1;
+    width: 95%;
+  }
+  #terminos{
+    order: 2;
+    width: 95%;
+  }
+  #Redes{
+    order: 3;
+    width: 95%;
+  }
+  #Derechos{
+    order: 4;
+    width: 95%;
+  }
+
 
 }
+
+/*Desktop*/
 
 @media (min-width:901px) {
   #contenido{
     width: 900px;
     margin: 0 auto;
   }
+
+  /*Cabecera*/
   #titulo{
     width: 45%;
     order: 1;
@@ -101,6 +161,8 @@ a:link, a:visited{
     order: 2;
     text-align: right;
   }
+
+  /*Index*/
   #paisajes{
     order: 1;
     width: 50%;
@@ -110,6 +172,21 @@ a:link, a:visited{
     width: 50%;
   }
 
-
-
+  /*Pie Pagina*/
+  #contacto{
+    order: 1;
+    width: 20%;
+  }
+  #terminos{
+    order: 2;
+    width: 20%;
+  }
+  #Redes{
+    order: 3;
+    width: 20%;
+  }
+  #Derechos{
+    order: 4;
+    width: 20%;
+  }
 }
