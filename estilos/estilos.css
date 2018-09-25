@@ -78,6 +78,18 @@ figure{
   margin: 2.5% 5%;
 }
 
+#paisajes:hover{
+  transform: rotate(10deg);
+  -webkit-filter: drop-shadow(2px 2px #82c3a6);
+  filter: drop-shadow(2px 2px #82c3a6);
+}
+
+#retratos:hover{
+  transform: translate(20px, -5px);
+  -webkit-filter: drop-shadow(2px 2px #82c3a6);
+  filter: drop-shadow(2px 2px #82c3a6);
+}
+
 /*Secciones Paisajes y Retratos*/
 
 .blur img{
