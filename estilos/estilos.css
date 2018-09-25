@@ -9,9 +9,11 @@ header{
   background: #5b7989;
   border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
   color: white;
   display: flex;
   flex-flow: row wrap;
+  animation: header-animation 1s;
 }
 
 #titulo{
@@ -28,6 +30,18 @@ header{
 #menu a:link, #menu a:visited{
   color: white;
   padding: 0.5em;
+}
+
+@keyframes header-animation {
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
 }
 
 /*Imagenes*/
@@ -113,6 +127,7 @@ footer{
   background: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   -moz-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
   color: black;
   text-align: center;
   display: flex;
@@ -122,7 +137,6 @@ footer{
 footer > div{
   margin: 2.5%;
 }
-
 
 /*Mobile*/
 
